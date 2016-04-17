@@ -20,14 +20,14 @@ d1dc44ce216d097a4892489908fd4888bcb3cbeb009b50eac0df2a9577c53ba6
 ```bash
 $ docker ps
 CONTAINER ID  IMAGE          COMMAND    CREATED  STATUS  PORTS   NAMES
-d1dc44ce216d  nginx:alpine   "nginx -g  3 s ago  Up 3 s  80/tcp  stoic_pike
+d1dc44ce216d  nginx:alpine   "nginx -"  3 s ago  Up 3 s  80/tcp  stoic_pike
 ```
 
 
 ```bash
 $ docker ps -a
 CONTAINER ID  IMAGE          COMMAND    CREATED  STATUS  PORTS   NAMES
-d1dc44ce216d  nginx:alpine   "nginx -g  3 s ago  Up 3 s  80/tcp  stoic_pike
+d1dc44ce216d  nginx:alpine   "nginx -"  3 s ago  Up 3 s  80/tcp  stoic_pike
 e3b97eaa0c87  alpine:latest  "sh"       2 h ago  Exited          evil_stallman
 ```
 
@@ -55,7 +55,7 @@ $ docker start stoic_pike
 $ stoic_pike
 $ docker ps
 CONTAINER ID  IMAGE          COMMAND    CREATED  STATUS  PORTS   NAMES
-d1dc44ce216d  nginx:alpine   "nginx -g  3 s ago  Up 3 s  80/tcp  stoic_pike
+d1dc44ce216d  nginx:alpine   "nginx -"  3 s ago  Up 3 s  80/tcp  stoic_pike
 $
 ```
 

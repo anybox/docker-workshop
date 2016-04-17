@@ -1,4 +1,4 @@
-# Hello docker
+# Hello Docker
 
 Here a basic example that write "Hello docker" on your shell.
 
@@ -46,6 +46,6 @@ To understand Docker’s internals let's go in deep with **images**,
 **containers**, **registries**
 
 
-[^1]: Alpine Linux is a Linux distribution (as Debian, Ununtu, CentOs) built 
-      around musl libc and BusyBox. 
-      [Alpine image](https://hub.docker.com/_/alpine/) is only 5 MB in size.
+[^1]: Alpine Linux is a Linux distribution (as Debian, Ununtu, CentOs) built
+around musl libc and BusyBox. [Alpine image](https://hub.docker.com/_/alpine/)
+is only 5 MB in size.

@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 * [Foundations](010_foundations/README.md)
-    * [Hello World](010_foundations/hello.md)
+    * [Hello Docker](010_foundations/hello.md)
     * [Containers](010_foundations/containers.md)
     * [Images](010_foundations/images.md)
     * [Registries](010_foundations/registries.md)
