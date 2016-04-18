@@ -3,7 +3,6 @@
   "description": "This tutorial is used for Anybox docker workshops",
   "plugins": [
     "github",
-    "copy-code-button",
     "language-picker",
     "heading-anchors"
   ],
