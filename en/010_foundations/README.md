@@ -1,13 +1,11 @@
 # Docker concept
 
-
-
 In this first part we are going to use and review main docker concepts.
 
 
 Before starting you need to install docker.
 
-# Install on Debian Jessie (8.0)
+## Install on Debian Jessie (8.0)
 
 ```bash
 $ sudo apt-get update
@@ -18,6 +16,7 @@ Docker version 1.x.x, build xxxxxxx
 
 Yaha... you are ready to work with docker \o/
 
-> **Warning:** Mains of docker commands as to be launch as root.
+> **Warning** Mains of docker commands as to be launch as root.
 
-> **Note:** You can run `docker` to get the list of available commands.
+
+> **Note** You can run `docker` to get the list of available commands.
