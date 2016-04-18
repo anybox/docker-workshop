@@ -14,7 +14,7 @@ Hello docker
 
 Let's understand what's happens!
 
-We have asked docker to run alpine[^1] and display "Hello docker" in the output.
+We have asked docker to run Alpine[^1] and display "Hello docker" in the output.
 
 So docker has pulled the latest Alpine image from the Docker registry, create
 a new container from this image, start the container run `echo "Hello docker"`
@@ -46,6 +46,4 @@ To understand Docker’s internals let's go in deep with **images**,
 **containers**, **registries**
 
 
-[^1]: Alpine Linux is a Linux distribution (as Debian, Ununtu, CentOs) built
-around musl libc and BusyBox. [Alpine image](https://hub.docker.com/_/alpine/)
-is only 5 MB in size.
+[^1]: [Alpine](https://hub.docker.com/_/alpine) is a tiny Linux distribution 

@@ -50,11 +50,36 @@ OK: 7 MiB in 15 packages
 / # exit
 ```
 
-If you run it again ``docker run -it alpine sh`` that will create a new
-container on alpine image without curl installed.
+If you run it again ``docker run -it alpine sh`` notice that will create a new
+container with alpine image but without curl installed.
+
+You could start the existing Docker container but this won't meet our goal to
+recreate a new docker container with curl included.
+
+```bash
+$ docker start -i 623e39ab887f
+$ curl --version
+curl 7.x...
+$ exit
+```
+
+So we can commit this container to save it as Docker image
+
+```bash
+$ docker commit -m "install curl" 623e39ab887f alpine:curl
+44791c39942caa99974e2ca861c046384519c141195e4e21245fc20acff953ab
+$ docker run -it alpine:curl sh
+/ # curl https://anybox.fr > anybox.html
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 25739  100 25739    0     0  93126      0 --:--:-- --:--:-- --:--:--  103k
+/ # exit
+```
+
+> **Warning:** Beaware the copied Docker container is paused by default while
+> creating the new image.
 
 
-***TODO: Finalyze this chapter
 
 ## Build image from a ``Dockerfile``
 
@@ -65,6 +90,8 @@ FROM alpine
 RUN apk update 
 RUN apk add curl
 ```
+
+[Dockerfile documentation](https://docs.docker.com/engine/reference/builder/ "RTFM")
 
 ## List images
 

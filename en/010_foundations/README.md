@@ -17,3 +17,7 @@ Docker version 1.x.x, build xxxxxxx
 ```
 
 Yaha... you are ready to work with docker \o/
+
+> **Warning:** Mains of docker commands as to be launch as root.
+
+> **Note:** You can run `docker` to get the list of availaible commands.
