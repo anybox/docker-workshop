@@ -20,4 +20,4 @@ Yaha... you are ready to work with docker \o/
 
 > **Warning:** Mains of docker commands as to be launch as root.
 
-> **Note:** You can run `docker` to get the list of availaible commands.
+> **Note:** You can run `docker` to get the list of available commands.

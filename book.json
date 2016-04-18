@@ -2,11 +2,17 @@
   "title": "Docker workshop",
   "description": "This tutorial is used for Anybox docker workshops",
   "plugins": [
-    "github"
+    "github",
+    "copy-code-button",
+    "language-picker",
+     "anchors-wrapper",
   ],
   "pluginsConfig": {
     "github": {
-            "url": "https://github.com/petrus-v/docker-tutorial"
-        }
+      "url": "https://github.com/petrus-v/docker-tutorial"
+    },
+    "language-picker": {
+      "grid-columns": 3
     }
+  }
 }
