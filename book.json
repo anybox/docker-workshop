@@ -1,4 +1,12 @@
 {
   "title": "Docker workshop",
-  "description": "This tutorial is used for Anybox docker workshops"
+  "description": "This tutorial is used for Anybox docker workshops",
+  "plugins": [
+    "github"
+  ],
+  "pluginsConfig": {
+    "github": {
+            "url": "https://github.com/petrus-v/docker-tutorial"
+        }
+    }
 }
