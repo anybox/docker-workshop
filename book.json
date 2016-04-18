@@ -5,7 +5,7 @@
     "github",
     "copy-code-button",
     "language-picker",
-     "anchors-wrapper",
+     "anchors-wrapper"
   ],
   "pluginsConfig": {
     "github": {
