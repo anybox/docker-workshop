@@ -76,14 +76,13 @@ $ docker run -it alpine:curl sh
 / # exit
 ```
 
-> **Warning:** Beaware the copied Docker container is paused by default while
+> **Warning** Be aware the copied Docker container is paused by default while
 > creating the new image.
-
 
 
 ## Build image from a ``Dockerfile``
 
-Let's do the same using a ``Dockerfile``:
+Let's do the same using a ``/tmp/alpinecurl/Dockerfile``:
 
 ```Dockerfile
 FROM alpine
@@ -91,23 +90,72 @@ RUN apk update
 RUN apk add curl
 ```
 
-[Dockerfile documentation](https://docs.docker.com/engine/reference/builder/ "RTFM")
+> **Warning** This Dockerfile contains some bad practices. We will see late why
+
+
+[Dockerfile documentation](https://docs.docker.com/engine/reference/builder/
+"RTFM")
+
+Build a Docker image using this Dockerfile:
+
+```bash
+/tmp/alpinecurl$ docker build -t alpinecurl .
+Sending build context to Docker daemon 2.048 kB
+Sending build context to Docker daemon 
+Step 0 : FROM alpine
+ ---> 2a250d324882
+Step 1 : RUN apk update
+ ---> Running in 17b53395dc3c
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.3/community/x86_64/APKINDEX.tar.gz
+v3.3.3-28-gef388c9 [http://dl-cdn.alpinelinux.org/alpine/v3.3/main]
+v3.3.3-9-gfc38db2 [http://dl-cdn.alpinelinux.org/alpine/v3.3/community]
+OK: 5858 distinct packages available
+ ---> 8054303790e2
+Removing intermediate container 17b53395dc3c
+Step 2 : RUN apk add curl
+ ---> Running in 0f88f742a236
+(1/4) Installing openssl (1.0.2g-r0)
+(2/4) Installing ca-certificates (20160104-r2)
+(3/4) Installing libssh2 (1.6.0-r1)
+(4/4) Installing curl (7.47.0-r0)
+Executing busybox-1.24.1-r7.trigger
+Executing ca-certificates-20160104-r2.trigger
+OK: 7 MiB in 15 packages
+ ---> bd3c413e1d5e
+Removing intermediate container 0f88f742a236
+Successfully built bd3c413e1d5e
+```
+
 
 ## List images
 
-
+```bash
+docker images
+```
 
 ## Layers
+
+
+```bash
+docker images -a
+```
 
 ```Dockerfile
 FROM alpine
 RUN apk update && apk add curl
 ```
 
+## Tags
+
+> **Warning** Updating an existing Docker image do not update existing container 
 
 ## Remove images
 
-## Tags
+```bash
+docker rmi alpinecurl
+```
+
 
 ## Image definition
 

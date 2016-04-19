@@ -24,5 +24,5 @@ The learning method of this workshop tried to follow the intuitive assimilation.
 
 ## Contributing
 
-Feel free to open issue or create Pull Request at
-https://github.com/petrus-v/docker-tutorial
+Feel free to open issue or create Pull Request on [petrus-v/docker-tutorial](
+https://github.com/petrus-v/docker-tutorial "Workshop book repo") repo
