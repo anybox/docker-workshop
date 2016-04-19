@@ -136,15 +136,20 @@ docker images
 
 ## Layers
 
+> **Info** Each Dockerfile command create an intermediate image.
 
 ```bash
 docker images -a
 ```
 
+> **Warning** Docker use intermediate images as cache[^1] depending commands
+> that can produce an expected behaviors
+
 ```Dockerfile
 FROM alpine
 RUN apk update && apk add curl
 ```
+
 
 ## Tags
 
@@ -163,3 +168,7 @@ A Docker image is a read-only template. For example, an image could contain a
 Debian operating system with Nginx and your web application installed.
 
 Images are used to create Docker containers.
+
+
+[^1]: [Build cache](https://github.com/docker/docker/blob/master/docs/userguide/
+eng-image/dockerfile_best-practices.md#build-cache)
