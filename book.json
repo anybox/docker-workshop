@@ -4,8 +4,7 @@
   "plugins": [
     "github",
     "language-picker",
-    "heading-anchors",
-    "richquotes"
+    "heading-anchors"
   ],
   "pluginsConfig": {
     "github": {
