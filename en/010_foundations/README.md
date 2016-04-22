@@ -14,6 +14,14 @@ $ sudo docker --version
 Docker version 1.x.x, build xxxxxxx
 ```
 
+## Mac and windows users
+
+Install docker using the [Docker toolbox](
+https://docs.docker.com/toolbox/overview/ "Docker machine, Docker Engine,
+Docker compose, Kitematic, Oracle Virtualbox, preconfigured shell")
+
+## Make sure it works
+
 > **Note** You can run `docker` to get the list of available commands.
 
 Yaha... you are ready to work with docker \o/
