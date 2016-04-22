@@ -11,10 +11,10 @@ application storing its data in postgresql (behind nginx) using docker.
 
 This workshop is split in 4 main parts:
 
-* Docker concepts
-* Communicate between/with docker
-* Manage your data
-* Avoid developer headaches
+* [Docker concepts](010_foundations/README.md)
+* [Communicate between/with Docker containers](020_communicate/README.md)
+* [Manage your data](030_volumes/README.md)
+* [Avoid developer headaches](040_experienes/README.md)
 
 
 ## learning method
