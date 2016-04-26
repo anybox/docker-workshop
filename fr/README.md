@@ -30,5 +30,5 @@ verez les points theoriques après avoir utilisé au moins une fois le point
 ## Contribuer
 
 N'hesitez pas à créer des tickets ou Pull Request sur les repos
-[petrus-v/docker-tutorial](https://github.com/petrus-v/docker-tutorial
+[petrus-v/docker-workshop](https://github.com/petrus-v/docker-workshop
 "Workshop book repo")

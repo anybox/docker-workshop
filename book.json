@@ -8,7 +8,7 @@
   ],
   "pluginsConfig": {
     "github": {
-      "url": "https://github.com/petrus-v/docker-tutorial"
+      "url": "https://github.com/petrus-v/docker-workshop"
     },
     "language-picker": {
       "grid-columns": 3

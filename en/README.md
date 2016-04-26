@@ -26,5 +26,5 @@ you will practice at least one time before to see some theory about the topic.
 
 ## Contributing
 
-Feel free to open issue or create Pull Request on [petrus-v/docker-tutorial](
-https://github.com/petrus-v/docker-tutorial "Workshop book repo") repo
+Feel free to open issue or create Pull Request on [petrus-v/docker-workshop](
+https://github.com/petrus-v/docker-workshop "Workshop book repo") repo

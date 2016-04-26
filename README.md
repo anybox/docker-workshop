@@ -1,3 +1,3 @@
 # docker-workshop
 
-This is the docker tutorial we are using at Anybox workshops 
+This is the docker gitbook we are using at Anybox workshops.
