@@ -13,5 +13,6 @@
     * [link your containers](020_communicate/link.md)
 * [Overpower volumes](030_volumes/README.md)
     * [Storage consideration](030_volumes/storage.md)
+* [Exercises](035_exercises/README.md)
 * [Developer real life headache](040_experiences/README.md)
 * [Ressources](ressources.md)

@@ -14,12 +14,14 @@ This workshop is split in 4 main parts:
 * [Docker concepts](010_foundations/README.md)
 * [Communicate between/with Docker containers](020_communicate/README.md)
 * [Manage your data](030_volumes/README.md)
+* [Exercises](035_exercises/README.md)
 * [Avoid developer headaches](040_experienes/README.md)
 
 
 ## learning method
 
-The learning method of this workshop tried to follow the intuitive assimilation.
+The learning method of this workshop tried to follow the intuitive assimilation,
+you will practice at least one time before to see some theory about the topic.
 
 
 ## Contributing
