@@ -28,3 +28,9 @@ you will practice at least one time before to see some theory about the topic.
 
 Feel free to open issue or create Pull Request on [petrus-v/docker-workshop](
 https://github.com/petrus-v/docker-workshop "Workshop book repo") repo
+
+## License
+
+All content is licensed under the [Creative Commons Attribution-ShareAlike 4.0
+International (CC BY-SA 4.0)](http://creativecommons.org/licenses/by-sa/4.0/
+"CC BY-SA 4.0")

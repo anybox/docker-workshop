@@ -32,3 +32,9 @@ verez les points theoriques après avoir utilisé au moins une fois le point
 N'hesitez pas à créer des tickets ou Pull Request sur les repos
 [petrus-v/docker-workshop](https://github.com/petrus-v/docker-workshop
 "Workshop book repo")
+
+## Licence
+
+L'ensemble de ce document est sous licence [Creative Commons
+Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)](
+http://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA 4.0")
