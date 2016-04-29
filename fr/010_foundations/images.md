@@ -50,12 +50,12 @@ OK: 7 MiB in 15 packages
 / # exit
 ```
 
-Vous remarquerez, si vous lancer de nouveau la commande 
-``docker run -it alpine sh`` cela créé un nouveau container avec l'image Alpine
+Vous remarquerez, si vous lancez de nouveau la commande 
+``docker run -it alpine sh`` cela crée un nouveau container avec l'image Alpine
 qui ne contient pas curl.
 
 Vous pourriez redémarrer le Docker existant mais ça ne vous permet pas de créer
-des nouveaux contianer Docker avec curl inclus.
+de nouveaux containers Docker avec curl inclus.
 
 ```bash
 $ docker start -i 623e39ab887f
@@ -64,7 +64,7 @@ curl 7.x...
 $ exit
 ```
 
-Nous commitons donc ce container pour le sauvegarder comme image Docker
+Nous committons donc ce container pour le sauvegarder comme image Docker
 
 ```bash
 $ docker commit -m "install curl" 623e39ab887f alpine:curl
@@ -77,7 +77,7 @@ $ docker run -it alpine:curl sh
 / # exit
 ```
 
-> **Attention** Ayé en tête que par défaut lors de la copie d'un container
+> **Attention** Ayez en tête que par défaut lors de la copie d'un container
 > Docker il est mis en pause le temps de créer l'image.
 
 
@@ -98,7 +98,7 @@ RUN apk add curl
 [Dockerfile documentation](https://docs.docker.com/engine/reference/builder/
 "RTFM")
 
-Construisez l'image docker depuis le Dockerfile ci dessus
+Construisez l'image docker depuis le Dockerfile ci-dessus
 
 ```bash
 /tmp/alpinecurl$ docker build -t alpinecurl .
@@ -145,8 +145,8 @@ docker images
 docker images -a
 ```
 
-> **Attention** Docker utilise ces images intermédiaire comme cache[^1] lors de
-> la construction d'une nouvelle image le comportement dépendant de la commande.
+> **Attention** Docker utilise ces images intermédiaires comme cache[^1] lors de
+> la construction d'une nouvelle image, le comportement dépendant de la commande.
 
 ```Dockerfile
 FROM alpine
@@ -156,8 +156,8 @@ RUN apk update && apk add curl
 
 ## Tags
 
-> **Attention** La mise à jour d'une image existant ne met pas à jour les
-> container existant
+> **Attention** La mise à jour d'une image existante ne met pas à jour les
+> containers existants
 
 ## Supprimer des images
 
@@ -169,8 +169,8 @@ docker rmi alpinecurl
 ## definition
 
 Une image Docker est un modèle en lecture seule, Par exemple, une image est
-basé sur un système d'exploitation, peut contenir Nginx et votre application
-web installé dedans.
+basée sur un système d'exploitation, peut contenir Nginx et votre application
+web installée dedans.
 
 Les images sont utilisées pour créer les containers docker.
 
