@@ -4,12 +4,13 @@ __1 jour d'atelier pour débuter la pratique de docker__
 
 
 Cet atelier couvre les concepts basiques de docker et a pour objectif d'aider
-les dévelopeurs à comprendre et les acompagner dans leur premières utilisations.
+les dévelopeurs à comprendre et les acompagner dans leurs premières
+utilisations.
 
 A la fin de cette atelier vous serez en capaciter de configurer, lancer et
 développer une application web (derrière nginx) qui consume des données stockées
 dans un serveur Postgresql interrogé au travers un web service, le tout en
-utilisant un container docker par service.
+utilisant un container Docker différent par service.
 
 L'atelier est découpé en 5 parties:
 

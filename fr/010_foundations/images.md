@@ -1,8 +1,8 @@
 # Images
 
-## Pulling from registries
+## Récupérer une image sur un registre
 
-Let's get an image with Nginx stable on Alpine Linux distribution
+Récupérons l'image Nginx stable sur la distriubtion Alpine.
 
 ```bash
 $ docker pull nginx:stable-alpine
@@ -21,9 +21,9 @@ Digest: sha256:7d4a186f16ec00463ada491d62e12f60755e8aa2ea27ba1e6e0b26a9034347f6
 Status: Downloaded newer image for nginx:stable-alpine
 ```
 
-## Create image by committing a Docker container
+## Créons une image en commitant un container
  
-Let's install curl in an alpine container:
+Installons curl dans un container Alpine
 
 ```bash
 $ docker run -it alpine sh
@@ -50,11 +50,12 @@ OK: 7 MiB in 15 packages
 / # exit
 ```
 
-If you run it again ``docker run -it alpine sh`` notice that will create a new
-container with alpine image but without curl installed.
+Vous remarquerez, si vous lancer de nouveau la commande 
+``docker run -it alpine sh`` cela créé un nouveau container avec l'image Alpine
+qui ne contient pas curl.
 
-You could start the existing Docker container but this won't meet our goal to
-recreate a new docker container with curl included.
+Vous pourriez redémarrer le Docker existant mais ça ne vous permet pas de créer
+des nouveaux contianer Docker avec curl inclus.
 
 ```bash
 $ docker start -i 623e39ab887f
@@ -63,7 +64,7 @@ curl 7.x...
 $ exit
 ```
 
-So we can commit this container to save it as Docker image
+Nous commitons donc ce container pour le sauvegarder comme image Docker
 
 ```bash
 $ docker commit -m "install curl" 623e39ab887f alpine:curl
@@ -76,13 +77,13 @@ $ docker run -it alpine:curl sh
 / # exit
 ```
 
-> **Warning** Be aware the copied Docker container is paused by default while
-> creating the new image.
+> **Attention** Ayé en tête que par défaut lors de la copie d'un container
+> Docker il est mis en pause le temps de créer l'image.
 
 
-## Build image from a ``Dockerfile``
+## Construisons une image depuis un ``Dockerfile``
 
-Let's do the same using a ``/tmp/alpinecurl/Dockerfile``:
+Faisons la même chose dans un docker file ``/tmp/alpinecurl/Dockerfile``:
 
 ```Dockerfile
 FROM alpine
@@ -90,13 +91,14 @@ RUN apk update
 RUN apk add curl
 ```
 
-> **Warning** This Dockerfile contains some bad practices. We will see why later
+> **Attention** Ce Dockerfile ne suit pas les bonnes pratiques, nous verrons
+> pourquoi un peu plus loin
 
 
 [Dockerfile documentation](https://docs.docker.com/engine/reference/builder/
 "RTFM")
 
-Build a Docker image using this Dockerfile:
+Construisez l'image docker depuis le Dockerfile ci dessus
 
 ```bash
 /tmp/alpinecurl$ docker build -t alpinecurl .
@@ -128,22 +130,23 @@ Successfully built bd3c413e1d5e
 ```
 
 
-## List images
+## Lister les images
 
 ```bash
 docker images
 ```
 
-## Layers
+## les couches (Layers)
 
-> **Info** Almost each Dockerfile command create an intermediate image.
+> **Info** La plus part des commandes du Dockerfile crée des images
+> intermédiares
 
 ```bash
 docker images -a
 ```
 
-> **Warning** Docker use intermediate images as cache[^1] depending commands
-> that can produce an expected behaviors
+> **Attention** Docker utilise ces images intermédiaire comme cache[^1] lors de
+> la construction d'une nouvelle image le comportement dépendant de la commande.
 
 ```Dockerfile
 FROM alpine
@@ -153,22 +156,24 @@ RUN apk update && apk add curl
 
 ## Tags
 
-> **Warning** Updating an existing Docker image do not update existing container 
+> **Attention** La mise à jour d'une image existant ne met pas à jour les
+> container existant
 
-## Remove images
+## Supprimer des images
 
 ```bash
 docker rmi alpinecurl
 ```
 
 
-## Image definition
+## definition
 
-A Docker image is a read-only template. For example, an image could contain a
-Debian operating system with Nginx and your web application installed.
+Une image Docker est un modèle en lecture seule, Par exemple, une image est
+basé sur un système d'exploitation, peut contenir Nginx et votre application
+web installé dedans.
 
-Images are used to create Docker containers.
+Les images sont utilisées pour créer les containers docker.
 
 
-[^1]: [Build cache](https://github.com/docker/docker/blob/master/docs/userguide/
-eng-image/dockerfile_best-practices.md#build-cache)
+[^1]: [Comportement du cache lors du build](https://github.com/docker/docker/
+blob/master/docs/userguide/eng-image/dockerfile_best-practices.md#build-cache)
