@@ -1,6 +1,6 @@
 # Hello Docker
 
-Un premier exmple simple qui écris "Hello docker" dans votre console:
+Un premier exemple simple qui écrit "Hello docker" dans votre console:
 
 ```bash
 $ docker run alpine echo "Hello docker"
@@ -12,17 +12,17 @@ Status: Downloaded newer image for alpine:latest
 Hello docker
 ```
 
-Analysons ce qu'il vient de se produire.
+Analysons ce qui vient de se produire.
 
 Nous venons de demander à Docker de lancer Alpine[^1] et afficher "Hello docker"
-dans la sortie standart de votre console.
+dans la sortie standard de votre console.
 
 Donc Docker a récupéré (``pull``) la dernière (``latest``) image Alpine depuis
 le registre Docker, puis a créé un nouveau container depuis cette dernière et
 enfin à démarré le container et exécuté ``echo "Hello Docker" dans le container
 avant de l'arrêter.
 
-**Attends, attends je ne comprends pas 2 mots de ce que tu me racconte...**
+**Attends, attends je ne comprends pas 2 mots de ce que tu me racontes...**
 
 
 Regardons à quoi ressemble l'architecture 
@@ -35,14 +35,14 @@ Regardons à quoi ressemble l'architecture
 ## Le service Docker
 
 Comme le montre le diagramme ci dessus, le service (deamon) Docker tourne
-sur la machine hôte. L'utilisateur n'intéragit pas directement avec mais via
+sur la machine hôte. L'utilisateur n'interagit pas directement avec mais via
 le client Docker.
 
 
 ## le client (en ligne de commande de) Docker
 
 Le client Docker, est l'interface utilisateur de docker. Il accepte des
-commandes qu'il commuique au service pour être exécuté par le service. 
+commandes qu'il communique au service pour être exécuté par le service. 
 
 Pour comprendre le fonctionnement de Docker regardons dans le détail ce que sont
 les **images**, les **containers** et les **registries**

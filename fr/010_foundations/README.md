@@ -2,7 +2,7 @@
 
 Dans cette première partie nous allons passer en revue les concepts de Docker.
 
-Commençons par installer Docker!
+Commençons par installer Docker !
 
 ## Installation Debian Jessie (8.0)
 
@@ -27,4 +27,4 @@ Docker compose, Kitematic, Oracle Virtualbox, preconfigured shell")
 Bravo... votre poste est configuré pour travailler avec docker \o/
 
 > **Attention** La majorité des commandes docker sont à exécuter avec
-> l'utilisteur ``root``
+> l'utilisateur ``root``
