@@ -13,7 +13,7 @@ Nous allons regarder quelsques exemples puis la théorie sur le système de
 stockage des données de docker.
 
 Les Exemples sont dans le projet [docker workshop example](https://github.com/
-petrus-v/docker-workshop-example/tree/master/02_volumes "Volumes examples")
+anybox/docker-workshop-example/tree/master/02_volumes "Volumes examples")
 vous allez apprendre à :
 
 * Déclarer des volumes dans un dockerfile ou au runtime

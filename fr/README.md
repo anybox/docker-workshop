@@ -31,7 +31,7 @@ verrez les points théoriques après avoir utilisé au moins une fois le point
 ## Contribuer
 
 N'hesitez pas à créer des tickets ou Pull Request sur les repos
-[petrus-v/docker-workshop](https://github.com/petrus-v/docker-workshop
+[anybox/docker-workshop](https://github.com/anybox/docker-workshop
 "Workshop book repo")
 
 ## Licence

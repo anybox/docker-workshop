@@ -8,7 +8,7 @@ http://docs.pyramid.anyblok.org/default "Anyblok pyramid documentation").
 This service allow to create / delete / update / get *TODOs* stored in a
 database.
 
-[link containers example](https://github.com/petrus-v/
+[link containers example](https://github.com/anybox/
 docker-workshop-example/tree/master/01_link_containers_anyblok)
 
 As you could see in this exercise we linked the postgres Docker container

@@ -14,7 +14,7 @@
 We will see some examples then some theories about docker storage.
 
 Examples are stored in [docker workshop example project](https://github.com/
-petrus-v/docker-workshop-example/tree/master/02_volumes "Volumes examples")
+anybox/docker-workshop-example/tree/master/02_volumes "Volumes examples")
 where you will learn how to use:
 
 * Volume declaration in Dockerfile or at Runtime

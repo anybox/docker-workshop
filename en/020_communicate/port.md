@@ -1,6 +1,6 @@
 # Port binding
 
-Let's run [port binding pyramid example](https://github.com/petrus-v/
+Let's run [port binding pyramid example](https://github.com/anybox/
 docker-workshop-example/tree/master/00_port_binding_pyramid)
 
 In fact there is different way to run this docker container
